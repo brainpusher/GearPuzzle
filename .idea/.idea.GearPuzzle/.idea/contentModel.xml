@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\hakke\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hakke\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_GearPuzzle.296285271.00" t="ExcludeRecursive" />
+    <e p="D:\GameDev\GearPuzzle" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="GameResources" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Axis.cs" t="Include" />
+            <e p="BackgroundResizer.cs" t="Include" />
+            <e p="GamePanelSwitcher.cs" t="Include" />
+            <e p="GearItem.cs" t="Include" />
+            <e p="GearType.cs" t="Include" />
+            <e p="IDraggable.cs" t="Include" />
+            <e p="SoundManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="GameStateController.cs" t="Include" />
+        <e p="QuitOnEscape.cs" t="Include" />
+      </e>
+      <e p="GearPuzzle.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
