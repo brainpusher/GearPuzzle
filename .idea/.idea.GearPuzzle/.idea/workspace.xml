@@ -14,8 +14,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/GameResources/Scripts/Axis.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameResources/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameResources/Scripts/GearType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameResources/Scripts/IDraggable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameResources/Scripts/GearItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameResources/Scripts/GameStateController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/Scripts/DragAndDropCell.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -31,11 +31,12 @@
         <option value="$PROJECT_DIR$/Assets/BackgroundResizer.cs" />
         <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/GearType.cs" />
         <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/GearItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/GamePanelSwitcher.cs" />
         <option value="$PROJECT_DIR$/Assets/GameStateController.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/Axis.cs" />
         <option value="$PROJECT_DIR$/Assets/QuitOnEscape.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/Axis.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/GamePanelSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/GearItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameResources/Scripts/GameStateController.cs" />
       </list>
     </option>
   </component>
@@ -90,6 +91,7 @@
       <workItem from="1601628890247" duration="8845000" />
       <workItem from="1601655310949" duration="7984000" />
       <workItem from="1601707816140" duration="17738000" />
+      <workItem from="1601900479625" duration="18872000" />
     </task>
     <servers />
   </component>
@@ -103,9 +105,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601727498636" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601564856377">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601983737154">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601564856377" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601983737154" />
   </component>
 </project>

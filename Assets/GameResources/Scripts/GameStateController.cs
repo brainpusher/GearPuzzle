@@ -86,7 +86,7 @@ public class GameStateController : MonoBehaviour
         foreach (Axis axis in axes)
         {
             sign *= (i % 2 == 0) ? 1 : -1;
-            StartCoroutine(GearRotationRoutine(axis.Gear.transform, winAnimationDuration,sign));
+            StartCoroutine(GearRotationRoutine(axis.Gear.transform, winAnimationDuration,sign, axis.Gear.GetGearSpeed));
             i++;
         }
     }
@@ -98,20 +98,16 @@ public class GameStateController : MonoBehaviour
     /// <param name="duration"></param>
     /// <param name="direction"></param>
     /// <returns></returns>
-    private  IEnumerator GearRotationRoutine(Transform gearTransform,float duration, int direction)
+    private  IEnumerator GearRotationRoutine(Transform gearTransform,float duration, int direction, float spinSpeed)
     {
-        float startRotation = gearTransform.eulerAngles.z;
-        float endRotation = startRotation + 360.0f;
-        float t = 0.0f;
-        while ( t  < duration )
+        float elapsed = 0f;
+        while (elapsed < duration)
         {
-            t += Time.deltaTime;
-            float zRotation = direction * Mathf.Lerp(startRotation, endRotation, t / duration) % 360.0f;
-            gearTransform.eulerAngles = new Vector3(gearTransform.eulerAngles.x,  gearTransform.eulerAngles.y, 
-                zRotation);
-            yield return null;
-            gearTransform.eulerAngles = Vector3.zero;
+            elapsed += Time.deltaTime;
+            gearTransform.Rotate(Vector3.forward*direction, spinSpeed * Time.deltaTime);
+            yield return  null;
         }
+
         gamePanelSwitcher.SwitchPanel();
     }
 }

@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 
-public class GearItem : MonoBehaviour, IDraggable
+public class GearItem : MonoBehaviour
 {
     [SerializeField] private GearType gearType;
     [SerializeField] private SoundManager soundManager;
-
+    [SerializeField] private float gearRotatinSpeed = 80f;
+    
     private bool isDragging;
     private Axis cell = null;
     private bool isTriggered = false;
+    
     public GearType GetGearType => gearType;
+    public float GetGearSpeed => gearRotatinSpeed;
     
     /// <summary>
     /// Метод для получения оси, в которой находится итем
@@ -33,6 +36,7 @@ public class GearItem : MonoBehaviour, IDraggable
         if (isDragging) {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             transform.Translate(mousePosition);
+            Debug.Log("Current Gear Transform Position: " + transform.localPosition);
         }
     }
     
@@ -61,7 +65,6 @@ public class GearItem : MonoBehaviour, IDraggable
     {   
         cell =  other.gameObject.GetComponent<Axis>();
         isTriggered = true;
-        //cell.Swap(this);
     }
 
     /// <summary>
